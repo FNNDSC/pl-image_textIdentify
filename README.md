@@ -126,11 +126,11 @@ docker build -t localhost/fnndsc/pl-appname .
 
 ### Running
 
-Mount the source code `app.py` into a container to try out changes without rebuild.
+Mount the source code `image_textIdentify.py` into a container to try out changes without rebuild.
 
 ```shell
 docker run --rm -it --userns=host -u $(id -u):$(id -g) \
-    -v $PWD/app.py:/usr/local/lib/python3.11/site-packages/app.py:ro \
+    -v $PWD/image_textIdentify.py:/usr/local/lib/python3.11/site-packages/image_textIdentify.py:ro \
     -v $PWD/in:/incoming:ro -v $PWD/out:/outgoing:rw -w /outgoing \
     localhost/fnndsc/pl-appname commandname /incoming /outgoing
 ```

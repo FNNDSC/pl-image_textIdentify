@@ -20,17 +20,17 @@ def get_version(rel_path: str) -> str:
 
 setup(
     name='chris-plugin-template',
-    version=get_version('app.py'),
+    version=get_version('image_textIdentify.py'),
     description='A ChRIS DS plugin template',
     author='FNNDSC',
     author_email='dev@babyMRI.org',
     url='https://github.com/FNNDSC/python-chrisapp-template',
-    py_modules=['app'],
+    py_modules=['image_textIdentify'],
     install_requires=['chris_plugin'],
     license='MIT',
     entry_points={
         'console_scripts': [
-            'commandname = app:main'
+            'image_textIdentify = image_textIdentify:main'
         ]
     },
     classifiers=[
