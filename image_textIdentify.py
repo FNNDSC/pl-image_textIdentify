@@ -9,7 +9,7 @@ import keras_ocr
 from chris_plugin import chris_plugin, PathMapper
 from matplotlib import pyplot as plt
 
-__version__ = '0.2.2'
+__version__ = '0.2.3'
 
 DISPLAY_TITLE = r"""
        _        _                             _            _  _____    _            _   _  __       
